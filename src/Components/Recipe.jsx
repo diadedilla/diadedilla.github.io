@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Row } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import './main.css'
 import './recipes.css'
 
@@ -9,7 +9,7 @@ export default class Recipe extends Component {
 
         return (
             <Button className='recipe'>
-                <img src={info.image} className='recipe-img'></img>
+                <img src={info.image} className='recipe-img' alt='icon'></img>
                 <p className='recipe-label'>{info.label}</p>
                 <p className='recipe-category'>{info.categ}</p>
             </Button>
