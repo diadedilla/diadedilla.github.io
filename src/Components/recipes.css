@@ -39,8 +39,34 @@
     transform: translateY(5px) !important;
 }
 
+.modal {
+    font-family: Raleway;
+}
+
+.modal-btn {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px !important;
+    background-color: white !important;
+    color: var(--accent-color) !important;
+    border: 2px solid var(--accent-color) !important;
+    margin-top: 2vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-weight: 500 !important;
+}
+
+.modal-btn:hover {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    transform: translateY(-3px);
+}
+
 .recipe {
     padding: 25px !important;
+    max-width: 250px;
+    height: 100%;
 }
 
 .recipe-img {
