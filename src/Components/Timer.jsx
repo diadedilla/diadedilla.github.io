@@ -63,8 +63,10 @@ export default class Timer extends Component {
 
         return (
             <div>
-                <p className='header'>until the next día de dilla</p>
+                {/* <p className='header'>until the next día de dilla</p> */}
+                <h1>countdown to día de dilla</h1>
                 <div className='countdown-wrapper'>
+                    <div className='countdown-wrapper'>
                     {days && (
                         <div className='countdown-item'>
                             <SVGCircle radius={daysRadius} />
@@ -79,6 +81,8 @@ export default class Timer extends Component {
                             <span>hours</span>
                         </div>
                     )}
+                    </div>
+                    <div className='countdown-wrapper'>
                     {minutes && (
                         <div className="countdown-item">
                             <SVGCircle radius={minutesRadius} />
@@ -93,6 +97,7 @@ export default class Timer extends Component {
                             <span>seconds</span>
                         </div>
                     )}
+                    </div>
                 </div>
             </div>
         )

@@ -47,6 +47,8 @@
 html, body {
     font-family: Raleway, sans-serif;
     height: 100%;
+    /* width: 100%; */
+    overflow-x: hidden;
 }
 
 span {
@@ -84,4 +86,22 @@ p {
     /* padding-left: 15vw !important;
     padding-right: 15vw !important; */
     max-width: 55vw !important;
+}
+
+.footer {
+    height: 100px;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    /* position: relative;
+    bottom: 0; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-weight: 500px;
+    text-align: center;
+    font-size: 17px;
 }

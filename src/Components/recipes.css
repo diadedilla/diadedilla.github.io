@@ -46,7 +46,7 @@
 .modal-btn {
     display: flex;
     flex-direction: row;
-    border-radius: 10px !important;
+    border-radius: 5px !important;
     background-color: white !important;
     color: var(--accent-color) !important;
     border: 2px solid var(--accent-color) !important;
@@ -60,7 +60,11 @@
 .modal-btn:hover {
     background-color: var(--accent-color) !important;
     color: white !important;
-    transform: translateY(-3px);
+    transform: translateY(-2px) !important;
+}
+
+.modal-btn:active {
+    transform: translateY(2px) !important
 }
 
 .recipe {

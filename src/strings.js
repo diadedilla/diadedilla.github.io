@@ -2,7 +2,7 @@ export const SMORE = {
     image: 'assets/smore.png',
     label: "s'mores", 
     categ: 'yeet-dilla',
-    recip: ''
+    recip: `#### Ingredients\n\n###### Cinnamon Sugar\n- one part cinnamon\n- two parts sugar\n\n###### Yeet-dilla\n- 2 tortillas\n- mini marshmallows\n- graham crackers crumbs\n- semi-sweet chocolate chips\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add marshmallows.\n2. As marshmallows begin to melt, distribute chocolate chips and graham cracker crumbs evenly. Season with cinnamon sugar. Add more marshmallows and cover with the second tortilla.\n3. Once the first tortilla begints to crips and the marshmallows melt, use a spatula to flip the yeet-dilla. Cook for another 2 minutes, until the bottom tortilla is cripsy, and transfer to plate.\n4. Top with a thin layer of cinnamon sugar, cut, and enjoy!`
 }
 
 export const POLLO = {
@@ -16,28 +16,28 @@ export const OREO = {
     image: 'assets/oreo.png',
     label: "cookies 'n' creme",
     categ: 'yeet-dilla',
-    recip: `#### Ingredients\n- 2 tortillas\n- thin oreos, crushed\n- mini marshmallows\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add marshmallows.\n2. As marshmallows being to melt, add crushed oreo. Add more marshmallows on top and cover with the second tortilla.\n3. Once the first tortilla begins to crisp and the marshmallows melt, about 3 minutes, use a spatula to flip the yeet-dilla. Cook for another 2 minutes, until the bottom tortilla is crispy, and transfer to plate.`
+    recip: `#### Ingredients\n- 2 tortillas\n- thin oreos, crushed\n- mini marshmallows\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add marshmallows.\n2. As marshmallows start to melt, add crushed oreo. Add more marshmallows on top and cover with the second tortilla.\n3. Once the first tortilla begins to crisp and the marshmallows melt, about 3 minutes, use a spatula to flip the yeet-dilla. Cook for another 2 minutes, until the bottom tortilla is crispy, and transfer to plate.`
 }
 
 export const CALI = {
     image: 'assets/cali.png',
     label: 'california roll',
     categ: 'jaaedilla',
-    recip: ''
+    recip: `Sorry, this isn't available yet. We are hard at work to make sure that you have the best Día de Dilla™ experience, so check back soon!`
 }
 
 export const TRIPE = {
     image: 'assets/tripe.png',
     label: 'refrigerated half-week old food court beef tripe but it still tasted pretty good',
     categ: 'jaaedilla',
-    recip: ''
+    recip: `Sorry, this isn't available yet. We are hard at work to make sure that you have the best Día de Dilla™ experience, so check back soon!`
 }
 
 export const CARNE = {
     image: 'assets/carne.png',
     label: 'carne asada',
     categ: 'yeetadilla',
-    recip: ''
+    recip: `Sorry, this isn't available yet. We are hard at work to make sure that you have the best Día de Dilla™ experience, so check back soon!`
 }
 
 export const HISTORY = {
