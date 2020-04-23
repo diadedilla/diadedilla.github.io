@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/raleway/Raleway-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/raleway/Raleway-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/raleway/Raleway-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/raleway/Raleway-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/raleway/Raleway-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root {
+    /* --primary-color: #4BBCF4;
+    --secondary-color: #61C0BF;
+    --accent-color: #ffb6b9; */
+    --primary-color: black;
+    --secondary-color: #D4cab8;
+    --accent-color: pink;
+    --shadow-color: rgb(221, 221, 221);
+    /* OTHERS: #BBDED6, #FAE3D9 */
+}
+
+html, body {
+    font-family: Raleway, sans-serif;
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: Raleway, sans-serif;
+    color: var(--primary-color);
+    font-weight: 600 !important;
+    font-size: 2rem;
+}
+
+h4 {
+    font-family: Raleway, sans-serif;
+}
+
+span {
+    font-family: Raleway, sans-serif;
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px !important;
+}
+
+.borderless {
+    border: none !important;
+}
+
+.nav-offset {
+    margin-top: 56px;
+}
+
+.center-column {
+    margin-left: 25vw !important;
+    margin-right: 25vw !important;
+}
