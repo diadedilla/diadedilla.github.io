@@ -27,3 +27,9 @@ export const TRIPE = {
     label: 'food court beef tripe',
     categ: 'jaaedilla'
 }
+
+export const CARNE = {
+    image: 'assets/carne.png',
+    label: 'carne asada',
+    categ: 'yeetadilla'
+}

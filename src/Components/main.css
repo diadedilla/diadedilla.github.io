@@ -81,6 +81,11 @@ p {
 }
 
 .center-column {
-    margin-left: 25vw !important;
-    margin-right: 25vw !important;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 15vw !important;
+    padding-right: 15vw !important; */
+    max-width: 55vw !important;
 }

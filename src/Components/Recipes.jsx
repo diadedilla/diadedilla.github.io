@@ -6,7 +6,7 @@ import './recipes.css';
 
 import Recipe from './Recipe';
 
-import { SMORE, OREO, POLLO, CALI, TRIPE } from '../strings'
+import { SMORE, OREO, POLLO, CALI, TRIPE, CARNE } from '../strings'
 
 export default class Recipes extends Component {
     render() {
@@ -29,6 +29,7 @@ export default class Recipes extends Component {
                     </Row>
                     <Row>
                         <Recipe info={ OREO } />
+                        <Recipe info={ CARNE } />
                     </Row>
                 </div>
                 <div className='section'>
