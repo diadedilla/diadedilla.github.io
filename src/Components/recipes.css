@@ -5,6 +5,13 @@
     color: var(--primary-color);
 }
 
+.section-desc {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
 .btn {
     border-radius: 0px !important;
     background: white !important;
@@ -18,11 +25,18 @@
     background-color: #efefef !important;
     transition: .5s;
     /* border: 1px solid lightgrey !important; */
-    /* transform: translate3d(-1px, -1px, 0px) !important; */
+    transform: translateY(-5px) !important;
 }
 
 .btn:focus {
     outline: none !important;
+    outline-style: none !important;
+    -moz-outline-style: none !important;
+    box-shadow: none !important;    
+}
+
+.btn:active {
+    transform: translateY(5px) !important;
 }
 
 .recipe {

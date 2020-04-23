@@ -18,6 +18,9 @@ export default class Recipes extends Component {
                     <Row>
                         <p className='section-header'>the classics</p>
                     </Row>
+                    <Row style={{marginTop:'-15px', marginBottom:'10px'}}>
+                        <p className='section-desc'>timeless tastes to tickle your tongue</p>
+                    </Row>
                     <Row>
                         <Recipe info={ SMORE } />
                         <Recipe info={ POLLO } />
@@ -27,6 +30,9 @@ export default class Recipes extends Component {
                     <Row>
                         <p className='section-header'>our favorites</p>
                     </Row>
+                    <Row style={{marginTop:'-15px', marginBottom:'10px'}}>
+                        <p className='section-desc'>you can't go wrong with any of these choices</p>
+                    </Row>
                     <Row>
                         <Recipe info={ OREO } />
                         <Recipe info={ CARNE } />
@@ -35,6 +41,9 @@ export default class Recipes extends Component {
                 <div className='section'>
                     <Row>
                         <p className='section-header'>ernest's chow</p>
+                    </Row>
+                    <Row style={{marginTop:'-15px', marginBottom:'10px'}}>
+                        <p className='section-desc'>gourmet.</p>
                     </Row>
                     <Row>
                         <Recipe info={ CALI } />

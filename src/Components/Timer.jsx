@@ -48,7 +48,7 @@ export default class Timer extends Component {
 
         return (
             <div>
-                <h1>Time until Día de Dilla</h1>
+                <p className='header'>until the next día de dilla</p>
                 <div className='countdown-wrapper'>
                     {days && (
                         <div className='countdown-item'>
