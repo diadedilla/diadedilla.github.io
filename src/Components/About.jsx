@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Row, Container } from 'react-bootstrap';
+import { Row, Container, Alert } from 'react-bootstrap';
 import './main.css';
-import './home.css';
+import './about.css';
 
 import Timer from './Timer';
+import { HISTORY, COVID } from '../strings'
 
 export default class About extends Component {
     constructor() {
@@ -17,11 +18,26 @@ export default class About extends Component {
         document.title = 'About Día de Dilla';
 
         return (
-            <Container style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-56px' }} >
-                <Row className='align-items-center justify-content-space-evenly'>
-                    <Timer timeTillDate='04 25 2020, 7:00 pm' timeFormat='MM DD YYY, h:mm a' />
-                </Row>
-            </Container>
+            <>
+                <Container style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-56px' }} >
+                    <div className='overlay'>
+                        <Alert variant="danger" className='center-column'>
+                            <Alert.Heading>{ COVID.title }</Alert.Heading>
+                            <p>
+                                { COVID.body }
+                            </p>
+                        </Alert>
+                    </div>
+                    <Row>
+                        <Timer timeTillDate='04 25 2020, 7:00 pm' timeFormat='MM DD YYY, h:mm a' />
+                    </Row>
+                </Container>
+                <div className='center-column'>
+                    <p className='header'>a brief history</p>
+                    <p>{HISTORY}</p>
+                </div>
+                <div style={{ paddingBottom: '75px' }} />
+            </>
         )
     }
 }
