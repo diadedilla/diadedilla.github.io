@@ -1,9 +1,10 @@
 import moment from 'moment';
+import 'moment-timezone';
 import React, { Component } from 'react';
 
 import './timer.css';
 
-/* Credit: https://www.florin-pop.com/blog/2019/05/countdown-built-with-react/*/
+// Credit: https://www.florin-pop.com/blog/2019/05/countdown-built-with-react/ 
 export default class Timer extends Component {
     state = {
         days: undefined,
@@ -15,13 +16,20 @@ export default class Timer extends Component {
     componentDidMount() {
         this.interval = setInterval(() => {
             const { timeTillDate, timeFormat } = this.props;
-            const then = moment(timeTillDate, timeFormat);
+            const then = moment(timeTillDate, timeFormat).tz("America/Los_Angeles");
             const now = moment();
-            const countdown = moment(then - now);
-            const days = countdown.format('D');
-            const hours = countdown.format('HH');
-            const minutes = countdown.format('mm');
-            const seconds = countdown.format('ss');
+
+            const countdown = moment.duration(moment(then).diff(moment(now)));
+            const days = parseInt(countdown.asDays());
+            const hours = parseInt(countdown.asHours()) - days * 24;
+            const minutes = parseInt(countdown.asMinutes()) - (days*24*60 + hours*60);
+            const seconds = parseInt(countdown.asSeconds()) 
+            - (days*24*60*60 + hours*60*60 + minutes*60);
+
+            console.log('then: ' + then.format());
+            console.log('now: ' + now.format());
+            // console.log('d: ' + d);
+            // console.log('s: ' + s);
 
             this.setState({ days, hours, minutes, seconds });
         }, 1000);
@@ -89,7 +97,7 @@ const SVGCircle = ({ radius }) => (
         <path
             fill="none"
             stroke="#D4CAB8"
-            stroke-width="4"
+            strokeWidth="4"
             d={describeArc(50, 50, 48, 0, radius)}
         />
     </svg>
