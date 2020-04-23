@@ -12,7 +12,7 @@
     color: var(--secondary-color);
 }
 
-.btn {
+.recipe-btn {
     border-radius: 0px !important;
     background: white !important;
     border: none !important;
@@ -21,21 +21,21 @@
     /* height: fit-content !important; */
 }
 
-.btn:hover {
+.recipe-btn:hover {
     background-color: #efefef !important;
     transition: .2s;
     /* border: 1px solid lightgrey !important; */
     transform: translateY(-5px) !important;
 }
 
-.btn:focus {
+.recipe-btn:focus {
     outline: none !important;
     outline-style: none !important;
     -moz-outline-style: none !important;
     box-shadow: none !important;    
 }
 
-.btn:active {
+.recipe-btn:active {
     transform: translateY(5px) !important;
 }
 

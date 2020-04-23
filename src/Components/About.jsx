@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Container, Alert } from 'react-bootstrap';
+import { Row, Container, Alert, Button } from 'react-bootstrap';
 import './main.css';
 import './about.css';
 
@@ -24,7 +24,7 @@ export default class About extends Component {
                 <Container style={{ height: '100vh', maxWidth: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '-56px'}} >
                     <Row>
                     <div className='col-12'>
-                        <Alert show={this.state.show} variant="danger" onClose={handleClose} dismissible>
+                        <Alert show={this.state.show} variant="danger" onClose={handleClose} style={{ width: '80vw', marginLeft: 'auto', marginRight: 'auto' }}dismissible>
                             <Alert.Heading>{ COVID.title }</Alert.Heading>
                             <p>
                                 { COVID.body }
@@ -34,6 +34,11 @@ export default class About extends Component {
                     <div className='col-12 col-xs-2'>
                         <Timer timeTillDate='2020-04-25 3:00' timeFormat='YYYY-MM-DD, hh:mm' />
                     </div>
+                    {/* <div className='col-12' style={{alignItems: 'center'}}> */}
+                        <Button className='home-btn' href='/recipes' style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+                                View Recipes
+                        </Button>
+                    {/* </div> */}
                     </Row>
                 </Container>
                 <div className='center-column'>
@@ -60,7 +65,8 @@ function FadeInSection(props) {
         entries.forEach(entry => setVisible(entry.isIntersecting));
       });
       observer.observe(domRef.current);
-      return () => observer.unobserve(domRef.current);
+      const thing = domRef.current;
+      return () => observer.unobserve(thing);
     }, []);
     return (
       <div

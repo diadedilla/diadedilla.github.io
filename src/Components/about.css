@@ -22,30 +22,39 @@
     /* box-shadow: 0px 0px 5px 1px var(--primary-color); */
 }
 
-.homeBtn {
-    display: flex;
+.home-btn {
+    display: flex !important;
     flex-direction: row;
-    border-radius: 25px !important;
-    background-color: white !important;
-    color: black !important;
-    border: 2px solid black !important;
-    margin-top: 2vh;
-    align-items: center;
-    justify-content: center;
+    border-radius: 5px !important;
+    background: white !important;
+    border: none !important;
+    color: black !important;    
+    border: 1px solid black !important;
     font-family: 'Raleway';
     font-weight: 500 !important;
-    /* padding-top: 10px !important; */
+    width: 150px;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
 }
 
-.homeBtn:hover {
+.home-btn:hover {
     background-color: black !important;
     color: white !important;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
-.homeBtn:focus {
-    outline: transparent;
-    border: transparent;
+.home-btn:focus {
+    outline: none !important;
+    outline-style: none !important;
+    -moz-outline-style: none !important;
+    box-shadow: none !important;   
+    background-color: black !important;
+    color: white !important;
+}
+
+.home-btn:active {
+    transform: translateY(2px) !important;
 }
 
 .splash-screen {

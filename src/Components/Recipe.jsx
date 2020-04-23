@@ -20,7 +20,7 @@ export default class Recipe extends Component {
 
         return (
             <>
-                <Button className='recipe' onClick={handleShow}>
+                <Button className='recipe recipe-btn' onClick={handleShow}>
                     <img src={info.image} className='recipe-img' alt='icon'></img>
                     <p className='recipe-label'>{info.label}</p>
                     <p className='recipe-category'>{info.categ}</p>
