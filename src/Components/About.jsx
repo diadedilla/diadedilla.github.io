@@ -29,7 +29,7 @@ export default class About extends Component {
                         </Alert>
                     </div>
                     <Row>
-                        <Timer timeTillDate='2020-04-25 19:00' timeFormat='YYYY-MM-DD, hh:mm' />
+                        <Timer timeTillDate='2020-04-25 3:00' timeFormat='YYYY-MM-DD, hh:mm' />
                     </Row>
                 </Container>
                 <div className='center-column'>

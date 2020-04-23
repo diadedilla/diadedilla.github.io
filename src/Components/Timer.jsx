@@ -18,18 +18,25 @@ export default class Timer extends Component {
             const { timeTillDate, timeFormat } = this.props;
             const then = moment(timeTillDate, timeFormat).tz("America/Los_Angeles");
             const now = moment();
+            // const countdown = moment.duration(then.diff(now));
+            // const days = parseInt(countdown.asDays());
+            // const hours = parseInt(countdown.asHours()) - days * 24;
+            // const minutes = parseInt(countdown.asMinutes()) - (days*24*60 + hours*60);
+            // const seconds = parseInt(countdown.asSeconds()) 
+            // - (days*24*60*60 + hours*60*60 + minutes*60);
 
-            const countdown = moment.duration(moment(then).diff(moment(now)));
-            const days = parseInt(countdown.asDays());
-            const hours = parseInt(countdown.asHours()) - days * 24;
-            const minutes = parseInt(countdown.asMinutes()) - (days*24*60 + hours*60);
-            const seconds = parseInt(countdown.asSeconds()) 
-            - (days*24*60*60 + hours*60*60 + minutes*60);
+            const countdown = moment(then - now);
+            const days = countdown.format('D');
+            const hours = countdown.format('HH');
+            const minutes = countdown.format('mm');
+            const seconds = countdown.format('ss');
 
-            console.log('then: ' + then.format());
-            console.log('now: ' + now.format());
-            // console.log('d: ' + d);
-            // console.log('s: ' + s);
+            // const countdown = moment.duration(moment(then).diff(moment(now)));
+            // const days = parseInt(countdown.asDays());
+            // const hours = parseInt(countdown.asHours()) - days * 24;
+            // const minutes = parseInt(countdown.asMinutes()) - (days*24*60 + hours*60);
+            // const seconds = parseInt(countdown.asSeconds()) 
+            // - (days*24*60*60 + hours*60*60 + minutes*60);
 
             this.setState({ days, hours, minutes, seconds });
         }, 1000);
@@ -45,10 +52,10 @@ export default class Timer extends Component {
         const { days, hours, minutes, seconds } = this.state;
 
         // Mapping the date values to radius values
-        const daysRadius = mapNumber(days, 30, 0, 0, 360);
-        const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
-        const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
-        const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
+        const daysRadius = mapNumber(days, 0, 30, 0, 360);
+        const hoursRadius = mapNumber(hours, 0, 24, 0, 360);
+        const minutesRadius = mapNumber(minutes, 0, 60, 0, 360);
+        const secondsRadius = mapNumber(seconds, 0, 60, 0, 360);
 
         if (!seconds) {
             return null;
