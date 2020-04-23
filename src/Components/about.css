@@ -22,12 +22,8 @@
     /* box-shadow: 0px 0px 5px 1px var(--primary-color); */
 }
 
-.bio-description.header {
-    font-size: 48px;
-}
-
-.bio-description.body {
-    font-size: 18px;
+.description {
+    margin-bottom: 50px;
 }
 
 .homeBtn {

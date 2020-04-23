@@ -4,7 +4,7 @@ import './main.css';
 import './about.css';
 
 import Timer from './Timer';
-import { HISTORY, COVID } from '../strings'
+import { HISTORY, COVID, ETYMOLOGY } from '../strings'
 
 export default class About extends Component {
     constructor() {
@@ -33,10 +33,16 @@ export default class About extends Component {
                     </Row>
                 </Container>
                 <div className='center-column'>
-                    <p className='header'>a brief history</p>
-                    <p>{HISTORY}</p>
+                    <div className='description'>
+                        <p className='header'>{HISTORY.title}</p>
+                        <p>{HISTORY.body}</p>
+                    </div>
+                    <div className='description'>
+                        <p className='header'>{ETYMOLOGY.title}</p>
+                        <p>{ETYMOLOGY.body}</p>
+                    </div>
                 </div>
-                <div style={{ paddingBottom: '75px' }} />
+                <div style={{ paddingBottom: '50px' }} />
             </>
         )
     }

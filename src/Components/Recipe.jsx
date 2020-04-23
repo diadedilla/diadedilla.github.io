@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import ReactMarkdown from 'react-markdown'
 import './main.css'
 import './recipes.css'
 
@@ -30,7 +31,7 @@ export default class Recipe extends Component {
                             <Modal.Title>{info.label}</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            Sorry, this isn't available yet. We are hard at work to make sure that you have the best Día de Dilla™ experience, so check back soon! 
+                            <ReactMarkdown source={info.recip} />
                         </Modal.Body>
                         <Modal.Footer>
                             <Button className='modal-btn' onClick={handleClose}>

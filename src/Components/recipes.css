@@ -23,7 +23,7 @@
 
 .btn:hover {
     background-color: #efefef !important;
-    transition: .5s;
+    transition: .2s;
     /* border: 1px solid lightgrey !important; */
     transform: translateY(-5px) !important;
 }
