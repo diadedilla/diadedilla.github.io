@@ -4,7 +4,7 @@ import './main.css';
 import './about.css';
 
 import Timer from './Timer';
-import { HISTORY, COVID, ETYMOLOGY } from '../strings'
+import { HISTORY, COVID, ETYMOLOGY, MISSION } from '../strings'
 
 export default class About extends Component {
     constructor() {
@@ -49,6 +49,10 @@ export default class About extends Component {
                     <FadeInSection className='description'>
                         <p className='header'>{ETYMOLOGY.title}</p>
                         <p>{ETYMOLOGY.body}</p>
+                    </FadeInSection>
+                    <FadeInSection className='description'>
+                        <p className='header'>{MISSION.title}</p>
+                        <p>{MISSION.body}</p>
                     </FadeInSection>
                 </div>
                 <div style={{ paddingBottom: '50px' }} />

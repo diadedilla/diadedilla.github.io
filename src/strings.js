@@ -2,7 +2,7 @@ export const SMORE = {
     image: 'assets/smore.png',
     label: "s'mores", 
     categ: 'yeet-dilla',
-    recip: `#### Ingredients\n\n###### Cinnamon Sugar\n- one part cinnamon\n- two parts sugar\n\n###### Yeet-dilla\n- 2 tortillas\n- mini marshmallows\n- graham crackers crumbs\n- semi-sweet chocolate chips\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add marshmallows.\n2. As marshmallows begin to melt, distribute chocolate chips and graham cracker crumbs evenly. Season with cinnamon sugar. Add more marshmallows and cover with the second tortilla.\n3. Once the first tortilla begints to crips and the marshmallows melt, use a spatula to flip the yeet-dilla. Cook for another 2 minutes, until the bottom tortilla is cripsy, and transfer to plate.\n4. Top with a thin layer of cinnamon sugar, cut, and enjoy!`
+    recip: `#### Ingredients\n\n###### Cinnamon Sugar\n- one part cinnamon\n- two parts sugar\n\n##### Yeet-dilla\n- 2 tortillas\n- mini marshmallows\n- graham crackers crumbs\n- semi-sweet chocolate chips\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add marshmallows.\n2. As marshmallows begin to melt, distribute chocolate chips and graham cracker crumbs evenly. Season with cinnamon sugar. Add more marshmallows and cover with the second tortilla.\n3. Once the first tortilla begints to crips and the marshmallows melt, use a spatula to flip the yeet-dilla. Cook for another 2 minutes, until the bottom tortilla is cripsy, and transfer to plate.\n4. Top with a thin layer of cinnamon sugar, cut, and enjoy!`
 }
 
 export const POLLO = {
@@ -23,21 +23,21 @@ export const CALI = {
     image: 'assets/cali.png',
     label: 'california roll',
     categ: 'jaaedilla',
-    recip: `Sorry, this isn't available yet. We are hard at work to make sure that you have the best Día de Dilla™ experience, so check back soon!`
+    recip: `#### Ingredients\n- 2 tortillas\n- imitation crab\n- sliced avocado\n- cheese\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat oil until shimmering.\n2. Place one tortilla on the pan. Spread cheese, imitation crab, and avocado over tortilla, and cover with the other tortilla.\n3. Cook until cheese melted, about 3 minutes. Flip quesadilla and cook until bottom tortilla heated through.\n4. Remove quesadilla from pan and place on sushi mat. Roll quesadilla, cut, and serve.`
 }
 
 export const TRIPE = {
     image: 'assets/tripe.png',
     label: 'refrigerated half-week old food court beef tripe but it still tasted pretty good',
     categ: 'jaaedilla',
-    recip: `Sorry, this isn't available yet. We are hard at work to make sure that you have the best Día de Dilla™ experience, so check back soon!`
+    recip: `#### Ingredients\n- 2 tortillas\n- mexican cheese, shredded (rustic cut preferred)\n- chinese market food court beef tripe\n- cilantro\n\n#### Steps\n1. Place beef tripe in refrigerator and wait for half of a week, up to one week\n2. In a medium skillet over medium-high heat, heat oil until shimmering.\n3. Sprinkle some cheese and cover with one tortilla. Shift tortilla around to spread the cheese evenly.\n4. Add cheese, beef tripe, cilantro, and cover with the other tortilla. Continue to shift the yeetadilla around to prevent sticking.\n5. When the bottom tortilla is firm, transfer the yeetadilla to a plate. Sprinkle cheese onto the pan, and return the yeetadilla to the pan, upside-down (the original top tortilla should now be on the bottom).\n6. Cook for another 2 minutes, transfer to plate, cut and enjoy!`
 }
 
 export const CARNE = {
     image: 'assets/carne.png',
     label: 'carne asada',
     categ: 'yeetadilla',
-    recip: `Sorry, this isn't available yet. We are hard at work to make sure that you have the best Día de Dilla™ experience, so check back soon!`
+    recip: `#### Ingredients\n- 2 tortillas\n- mexican cheese, shredded (rustic cut preferred)\n- carne asada\n- avocado, sliced\n- grilled fajita vegetables\n- 1/2 tbsp. vegetable oil\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat oil until shimmering.\n2. Sprinkle some cheese and cover with one tortilla. Shift tortilla around to spread the cheese evenly.\n3. Add cheese, carne asada, avocado, fajitas, then more cheese, and cover with the other tortilla. Continue to shift the yeetadilla around to prevent sticking.\n4. When the bottom tortilla is firm, transfer the yeetadilla to a plate. Sprinkle cheese onto the pan, and return the yeetadilla to the pan, upside-down (the original top tortilla should now be on the bottom).\n5. Cook for another 2 minutes, transfer to plate, cut and enjoy!`
 }
 
 export const HISTORY = {
@@ -53,4 +53,9 @@ export const COVID = {
 export const ETYMOLOGY = {
     title: 'etymology',
     body: 'The yeetadilla and yeet-dilla are frequently confused for one another, and while similar is many aspects, the two are also a world apart. The yeetadilla has its origins in the Frisian word for cheese, "tsiis", and the Mexican word "quesadilla". Formally, it is best described as a quesadilla using two tortillas, with cheese on both sides of each. The earliest known reference is dated cerca 2018. The term "yeet-dilla" originated around the same time in completely different circumstances. It refers to a sweeter cuisine, one generally enjoyed following a meal (typically of yeetadilla).'
+}
+
+export const MISSION = {
+    title: 'our mission',
+    body: `Fostering sustainable, customer-centric, inspiration through cloud-based sharing of recipes to empower and connect our community.`
 }
