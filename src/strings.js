@@ -23,7 +23,7 @@ export const CALI = {
     image: 'assets/cali.png',
     label: 'california roll',
     categ: 'jaaedilla',
-    recip: `#### Ingredients\n- 2 tortillas\n- imitation crab\n- sliced avocado\n- cheese\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat oil until shimmering.\n2. Place one tortilla on the pan. Spread cheese, imitation crab, and avocado over tortilla, and cover with the other tortilla.\n3. Cook until cheese melted, about 3 minutes. Flip quesadilla and cook until bottom tortilla heated through.\n4. Remove quesadilla from pan and place on sushi mat. Roll quesadilla, cut, and serve.`
+    recip: `#### Ingredients\n- 2 tortillas\n- imitation crab\n- sliced avocado\n- cucumber, julienned\n- mexican cheese, shreeded (rustic cut preferred)\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat oil until shimmering.\n2. Place one tortilla on the pan. Spread cheese, imitation crab, cucumber, and avocado over tortilla, and cover with the other tortilla.\n3. Cook until cheese melted, about 3 minutes. Flip quesadilla and cook until bottom tortilla heated through.\n4. Remove quesadilla from pan and place on sushi mat. Roll quesadilla, cut, and serve.`
 }
 
 export const TRIPE = {
