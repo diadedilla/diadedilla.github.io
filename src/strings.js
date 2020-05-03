@@ -2,7 +2,7 @@ export const SMORE = {
     image: 'assets/smore.png',
     label: "s'mores", 
     categ: 'yeet-dilla',
-    recip: `#### Ingredients\n\n###### Cinnamon Sugar\n- one part cinnamon\n- two parts sugar\n\n##### Yeet-dilla\n- 2 tortillas\n- mini marshmallows\n- graham crackers crumbs\n- semi-sweet chocolate chips\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add marshmallows.\n2. As marshmallows begin to melt, distribute chocolate chips and graham cracker crumbs evenly. Season with cinnamon sugar. Add more marshmallows and cover with the second tortilla.\n3. Once the first tortilla begints to crisp and the marshmallows melt, use a spatula to flip the yeet-dilla. Cook for another 2 minutes, until the bottom tortilla is cripsy, and transfer to plate.\n4. Top with a thin layer of cinnamon sugar, cut, and enjoy!`
+    recip: `#### Ingredients\n\n###### Cinnamon Sugar\n- one part cinnamon\n- two parts sugar\n\n##### Yeet-dilla\n- 2 tortillas\n- mini marshmallows\n- graham crackers crumbs\n- semi-sweet chocolate chips\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add marshmallows.\n2. As marshmallows begin to melt, distribute chocolate chips and graham cracker crumbs evenly. Season with cinnamon sugar. Add more marshmallows and cover with the second tortilla.\n3. Once the first tortilla begints to crisp and the marshmallows melt, use a spatula to flip the yeet-dilla. Cook for another 2 minutes, until the bottom tortilla is crispy, and transfer to plate.\n4. Top with a thin layer of cinnamon sugar, cut, and enjoy!`
 }
 
 export const POLLO = {
@@ -65,7 +65,7 @@ export const BARRY = {
     image: 'assets/barry.png',
     label: 'very barry™ apple pie',
     categ: 'yeet-dilla',
-    recip: `#### Ingredients\n\n###### Cinnamon Sugar\n- one part cinnamon\n- two parts sugar\n\n##### Yeet-dilla\n- 2 tortillas\n- apple pie filling\n- very barry™ topping\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add apple pie filling and cover with second tortilla.\n2. Once the first tortilla begints to crisp, use a spatula to yeet the yeet-dilla over. Cook for another 2 minutes, until the bottom tortilla is cripsy, and transfer to plate.\n3. Drizzle Very Barry™ over yeet-dilla, and enjoy!` 
+    recip: `#### Ingredients\n\n###### Cinnamon Sugar\n- one part cinnamon\n- two parts sugar\n\n##### Yeet-dilla\n- 2 tortillas\n- apple pie filling\n- very barry™ topping\n\n#### Steps\n1. In a medium skillet over medium-high heat, heat one tortilla. Add apple pie filling and cover with second tortilla.\n2. Once the first tortilla begints to crisp, use a spatula to yeet the yeet-dilla over. Cook for another 2 minutes, until the bottom tortilla is crispy, and transfer to plate.\n3. Drizzle Very Barry™ over yeet-dilla, and enjoy!` 
 }
 
 
