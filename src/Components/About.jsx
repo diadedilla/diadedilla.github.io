@@ -32,7 +32,7 @@ export default class About extends Component {
                         </Alert>
                     </div>
                     <div className='col-12 col-xs-2'>
-                        <Timer timeTillDate='2020-04-25 3:00' timeFormat='YYYY-MM-DD, hh:mm' />
+                        <Timer timeTillDate='2021-03-24 3:00' timeFormat='YYYY-MM-DD, hh:mm' />
                     </div>
                     {/* <div className='col-12' style={{alignItems: 'center'}}> */}
                         <Button className='home-btn' href='/recipes' style={{ marginLeft: 'auto', marginRight: 'auto' }}>

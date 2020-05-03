@@ -27,10 +27,13 @@ export default class Timer extends Component {
             // - (days*24*60*60 + hours*60*60 + minutes*60);
 
             const countdown = moment(then - now);
+            const months = countdown.format('MM');
             const days = countdown.format('D');
             const hours = countdown.format('HH');
             const minutes = countdown.format('mm');
             const seconds = countdown.format('ss');
+
+            // console.log(countdown);
 
             // console.log('days: ' + countdown.format('D'))
 
@@ -41,7 +44,7 @@ export default class Timer extends Component {
             // const seconds = parseInt(countdown.asSeconds()) 
             // - (days*24*60*60 + hours*60*60 + minutes*60);
 
-            this.setState({ days, hours, minutes, seconds });
+            this.setState({ months, days, hours, minutes, seconds });
         }, 1000);
     }
 
@@ -52,9 +55,10 @@ export default class Timer extends Component {
     }
 
     render() {
-        const { days, hours, minutes, seconds } = this.state;
+        const { months, days, hours, minutes, seconds } = this.state;
 
         // Mapping the date values to radius values
+        const monthsRadius = mapNumber(months, 0, 12, 0, 360);
         const daysRadius = mapNumber(days, 0, 30, 0, 360);
         const hoursRadius = mapNumber(hours, 0, 24, 0, 360);
         const minutesRadius = mapNumber(minutes, 0, 60, 0, 360);
@@ -70,13 +74,20 @@ export default class Timer extends Component {
                 <h1>countdown to día de dilla</h1>
                 <div className='countdown-wrapper' style={{marginBottom: '8px'}}>
                     <div className='countdown-wrapper'>
-                    {/* {days && (
+                    {months && (
+                        <div className='countdown-item'>
+                            <SVGCircle radius={monthsRadius} />
+                            {months}
+                            <span>months</span>
+                        </div>
+                    )}
+                    {days && (
                         <div className='countdown-item'>
                             <SVGCircle radius={daysRadius} />
                             {days}
                             <span>days</span>
                         </div>
-                    )} */}
+                    )}
                     {hours && (
                         <div className="countdown-item">
                             <SVGCircle radius={hoursRadius} />
