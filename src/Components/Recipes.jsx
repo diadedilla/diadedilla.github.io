@@ -6,7 +6,7 @@ import './recipes.css';
 
 import Recipe from './Recipe';
 
-import { SMORE, OREO, POLLO, CALI, TRIPE, CARNE } from '../strings'
+import { BARBACOA, BARRY, CALI, CARNE, JAMBALAYA, KOREA, OREO, POLLO, SMORE, TRIPE } from '../strings'
 
 export default class Recipes extends Component {
     render() {
@@ -36,6 +36,10 @@ export default class Recipes extends Component {
                     <Row>
                         <Recipe info={ OREO } />
                         <Recipe info={ CARNE } />
+                        <Recipe info={ JAMBALAYA } />
+                        <Recipe info={ BARBACOA } />
+                        <Recipe info={ KOREA } />
+                        <Recipe info={ BARRY } />
                     </Row>
                 </div>
                 <div className='section'>
@@ -50,6 +54,18 @@ export default class Recipes extends Component {
                         <Recipe info={ TRIPE } />
                     </Row>
                 </div>
+                {/* <div className='section'>
+                    <Row>
+                        <p className='section-header'></p>
+                    </Row>
+                    <Row style={{marginTop:'-15px', marginBottom:'10px'}}>
+                        <p className='section-desc'>gourmet.</p>
+                    </Row>
+                    <Row>
+                        <Recipe info={ CALI } />
+                        <Recipe info={ TRIPE } />
+                    </Row>
+                </div> */}
             </Container>
         )
     }
